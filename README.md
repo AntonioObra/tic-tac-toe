@@ -1,6 +1,6 @@
 # Tic Tac Toe
 
-Tic Tac Toe in terminal
+Tic Tac Toe in terminal made in C++ because I was bored.
 
 ## How to run?
 

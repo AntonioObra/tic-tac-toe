@@ -63,6 +63,13 @@ bool playMove(std::string input) {
   int row = input[0] - '0';
   int col = input[1] - '0';
 
+  if (row < 0 || row > 2 || col < 0 || col > 2) {
+    std::cout << "Your move must be in the range of the board: 00, 01, 02, 10, "
+                 "11, 12, 20, 21, 22... Try again."
+              << std::endl;
+    return false;
+  }
+
   if (!board[row][col].empty()) {
     std::cout << "This move cannot be played as it has already been played:"
               << std::endl;
